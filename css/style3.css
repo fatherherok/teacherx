@@ -1,0 +1,204 @@
+/*chat page starts...........*/
+
+.chat_message_area
+{
+ position: relative;
+ width: 100%;
+ height: 100px;
+  background-color: #e9eef4;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+  color:black;
+
+  
+}
+
+#group_chat_message
+{
+ width: 100%;
+ height: auto;
+ min-height: 80px;
+ overflow: auto;
+ padding:6px 24px 6px 12px;
+ 
+}
+
+.textbox{
+ width: 100%;
+ height: auto;
+ min-height: 80px;
+ overflow: auto;
+ padding:6px 24px 6px 12px;
+}
+.image_upload
+{
+ position: absolute;
+ top:40px;
+ right:3px;
+ clear:right;
+}
+.image_upload > form > input
+{
+    display: none;
+}
+
+.image_upload img
+{
+    width: 24px;
+    cursor: pointer;
+}
+
+
+
+.chat-messages {
+  
+  padding: 10px;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  flex: 1;
+  font-family: Helvetica;
+ 
+}
+
+.message-box-holder {
+  width: 100%;
+  margin: 0 0 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.message-sender {
+  font-size: 12px;
+  margin: 0 0 15px;
+  color: #30649c;
+  align-self: flex-start;
+}
+
+.message-sender a, .message-sender a:link, .message-sender a:visited, .chat-partner-name a, .chat-partner-name a:link, .chat-partner-name a:visited {
+  color: #30649c;
+  text-decoration: none;
+}
+
+.message-box {
+  padding: 6px 10px;
+  border-radius: 6px 0 6px 0;
+  position: relative;
+  background: #9cb8dd;
+  border: #9cb8dd;
+  color: #6c6c6c;
+  font-size: 12px;
+}
+
+.message-box:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid rgba(0, 0, 150, .2);
+  border-right: none;
+  bottom: -22px;
+  right: 10px;
+}
+
+.message-partner {
+  background: #fcfcfc;
+  border: #fcfcfc;
+  align-self: flex-start;
+}
+
+.message-partner:after {
+  right: auto;
+  bottom: auto;
+  top: -22px;
+  left: 9px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 100, .2);
+  border-left: none;
+}
+
+
+.sticky_chat{
+  position: absolute;
+  bottom:215px;
+  left:100px;
+  
+  z-index:1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: auto;
+  }
+.message-sticky {
+  background: #48e74f;
+  border: #fcfcfc;
+  align-self: flex-start;
+  color:white;
+}
+
+.message-sticky:after {
+  right: auto;
+  bottom: auto;
+  top: -22px;
+  left: 9px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 250, 0, .2);
+  border-left: none;
+}
+
+
+/* ===================================
+3. Responsive media
+==================================== */
+
+.video-container, .map-container, .embed-container {
+  position: relative;
+  margin: 0 0 15px 0;
+  padding-bottom: 51%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed, .video-container iframe, .map-container iframe, .map-container object, .map-container embed, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+}
+
+img.img-polaroid {
+  margin: 0 0 20px 0;
+}
+
+.img-box {
+  max-width: 100%;
+}
+
+.video-container, .map-container, .embed-container {
+  position: relative;
+  margin: 0 0 15px 0;
+  padding-bottom: 51%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed, .video-container iframe, .map-container iframe, .map-container object, .map-container embed, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+}
